@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Results</h1>
+    <select id="dataSelector">
+      <option value="data/prod_data.json">Production Data</option>
+      <option value="data/int_data.json">Integration Data</option>
+      <option value="data/qa_data.json">QA Data</option>
+    </select>
+    <ul id="lastRunList">
+      <!-- Last run count data will be inserted here -->
+    </ul>
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Count</th>
+          <th>Qualified API Name</th>
+          <th>Developer Name</th>
+          <th>Table Enum Or ID</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="resultsTableBody">
+        <!-- Data will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
